@@ -1,0 +1,17 @@
+public class StringReversal {
+  
+    public String reverseString(String input) {
+        StringBuilder reversedString = new StringBuilder(input);
+        return reversedString.reverse().toString();  
+    }
+
+    public static void main(String[] args) {
+        StringReversal stringReversal = new StringReversal();
+        
+        String originalString = "Javier";
+        String reversedString = stringReversal.reverseString(originalString);
+        
+        System.out.println("Original String: " + originalString);
+        System.out.println("Reversed String: " + reversedString);
+    }
+}
